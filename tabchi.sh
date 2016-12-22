@@ -24,7 +24,7 @@ install() {
 if [ "$1" = "install" ]; then
   install
 else
-  if [ ! -f telegram-cli-1215 ]; then
+  if [ ! -f telegram-cli-1222 ]; then
     echo "tg not found"
     echo "Run $0 install"
     exit
