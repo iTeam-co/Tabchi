@@ -1,5 +1,5 @@
 # Compiled Lua sources
-luac.out
+tabchi.lua
 
 # luarocks build files
 *.src.rock
