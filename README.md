@@ -16,7 +16,7 @@ Done!
 New Tabchi Created...
 ID : 1
 Full Sudo : 122774063
-Run : /run.sh 1
+Run : ./tabchi-1.sh
 ```
 Enter id of tabchi in "ID" part (it can be anything but should be unique)
 
