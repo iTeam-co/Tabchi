@@ -9,7 +9,7 @@ chmod 777 install.sh
 ```
 ## Create a bot!
 ```
-root@iTeam:~# ./creator.py
+root@iTeam:~# python creator.py
 Enter Tabchi ID (1,2,3,4,5,...) : 1
 Enter Full Sudo ID : 122774063
 Done!
