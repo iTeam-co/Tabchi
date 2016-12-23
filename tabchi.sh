@@ -11,6 +11,7 @@ install() {
   sudo apt-get upgrade
   sudo apt-get dist-upgrade
   sudo ppa-purge
+  sudo apt-get install gcc-6
   chmod 777 telegram-cli-1222
   RED='\033[0;31m'
   NC='\033[0m'
