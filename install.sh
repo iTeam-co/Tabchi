@@ -3,7 +3,7 @@ wget "https://valtman.name/files/telegram-cli-1222"
 sudo apt-get install ppa-purge
 sudo apt-get install python-pip
 sudo pip install redis
-sudo servoce redis-server restart
+sudo service redis-server restart
 sudo add-apt-repository ppa:ubuntu-toolchain-r/test
 sudo apt-get update
 sudo apt-get upgrade
