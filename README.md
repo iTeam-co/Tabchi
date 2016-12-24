@@ -24,7 +24,7 @@ Enter your telegram Id in "Full Sudo ID" part
 
 Enjoy Your New Bot!
 ## Run
-Use `./run.sh TABCHI-ID` to run your bot
+Use `./tabchi-TABCHI-ID.sh` to run your bot
 
 ## Help and more...
 Send `/help` to [@TabChiRobot](https://telegram.me/TabChiRobot) in telegram
