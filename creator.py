@@ -7,7 +7,7 @@ id = input("Enter Tabchi ID (1,2,3,4,5,...) : ")
 sudo = input("Enter Full Sudo ID : ")
 source = os.popen("cat base.lua").read()
 launcher = """while true; do
-  ./teleram-cli-1222 -p tabchi-{} -s tabchi-{}.lua
+  ./telegram-cli-1222 -p tabchi-{} -s tabchi-{}.lua
 done""".format(id,id)
 source2 = source.replace("TABCHI-ID",str(id))
 newsource = open("tabchi-{}.lua".format(id),"w")
