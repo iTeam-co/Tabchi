@@ -41,7 +41,7 @@ local function getChatId(chat_id)
 end
 
 local function getInputMessageContent(file, filetype, caption)
-  if file:match('/') then
+  if file:match('/') or file:match('.') then
     infile = {ID = "InputFileLocal", path_ = file}
   elseif file:match('^%d+$') then
     infile = {ID = "InputFileId", id_ = file}
