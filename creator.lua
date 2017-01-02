@@ -4,7 +4,7 @@ function gettabchiid()
     local pfile = popen('ls')
 	local last = 0
     for filename in pfile:lines() do
-        if filename:match('tabchi%-(%d+)%.lua') and tonumber(filename:match('tabchi%-(%d+)%.lua')) > last then
+        if filename:match('tabchi%-(%d+)%.lua') and tonumber(filename:match('tabchi%-(%d+)%.lua')) >= last then
 			last = tonumber(filename:match('tabchi%-(%d+)%.lua')) + 1
 			end		
     end
@@ -14,7 +14,8 @@ local last = gettabchiid()
 io.write("Auto Detected Tabchi ID : "..last)
 io.write("\nEnter Full Sudo ID : ")
 local sudo=io.read()
-io.open("tabchi-"..last..".lua",'w'):write(io.open("base.lua",'r'):read('*a'):gsub("TABCHI%-ID",last):gsub(".$","")):close()
+local text,ok = io.open("base.lua",'r'):read('*a'):gsub("TABCHI%-ID",last)
+io.open("tabchi-"..last..".lua",'w'):write(text):close()
 io.open("tabchi-"..last..".sh",'w'):write("while true; do\n./telegram-cli-1222 -p tabchi-"..last.." -s tabchi-"..last..".lua\ndone"):close()
 io.popen("chmod 777 tabchi-"..last..".sh")
 redis:set('tabchi:'..last..':fullsudo',sudo)
