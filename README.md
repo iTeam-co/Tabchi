@@ -1,4 +1,4 @@
-# Tabchi
+# Tabchi V3.1
 
 TG-CLI based broadcasting bot!
 
@@ -9,8 +9,8 @@ chmod 777 install.sh
 ```
 ## Create a bot!
 ```
-root@iTeam:~# python3 creator.py
-Enter Tabchi ID (1,2,3,4,5,...) : 1
+root@iTeam:~# lua creator.lua
+Auto Detected Tabchi ID : 1
 Enter Full Sudo ID : 122774063
 Done!
 New Tabchi Created...
@@ -18,8 +18,6 @@ ID : 1
 Full Sudo : 122774063
 Run : ./tabchi-1.sh
 ```
-Enter id of tabchi in "ID" part (it can be anything but should be unique)
-
 Enter your telegram Id in "Full Sudo ID" part
 
 Enjoy Your New Bot!
@@ -27,10 +25,12 @@ Enjoy Your New Bot!
 Use `./tabchi-ID.sh` to run your bot normaly or use `screen ./tabchi-ID.sh` for auto launch mode (put tabchi-id in ID part)
 
 ## Help and more...
-Send `/help` to [@TabChiRobot](https://telegram.me/TabChiRobot) in telegram
+Send `/start` to [@TabChiRobot](https://telegram.me/TabChiRobot) in telegram
 ## Developers
 
  * [BugFather (Amir_h)](https://telegram.me/BugFather)
  * [Base64 (Amin)](https://telegram.me/Base64)
+ * [Jan123 (Javad)](https://telegram.me/XxX_Developer_XxX)
+ * [Shayan123Hacker (Shayan)](https://telegram.me/Shayan123Hacker)
 
 ### Powered by [iTeam](https://telegram.me/iTeam_IR)
