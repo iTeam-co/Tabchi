@@ -1013,6 +1013,35 @@ end
 
 M.deleteChatReplyMarkup = deleteChatReplyMarkup
 
+-- User contact message
+-- @contact Contact to send
+-- @phone_number User's phone number
+-- @first_name User first name, 1-255 characters
+-- @last_name User last name
+-- @user_id User identifier if known, 0 otherwise
+local function sendContact(chat_id, reply_to_message_id, disable_notification, from_background, reply_markup, phone_number, first_name, last_name, user_id)
+  tdcli_function ({
+    ID = "SendMessage",
+    chat_id_ = chat_id,
+    reply_to_message_id_ = reply_to_message_id,
+    disable_notification_ = disable_notification,
+    from_background_ = from_background,
+    reply_markup_ = reply_markup,
+    input_message_content_ = {
+      ID = "InputMessageContact",
+      contact_ = {
+        ID = "Contact",
+        phone_number_ = phone_number,
+        first_name_ = first_name,
+        last_name_ = last_name,
+        user_id_ = user_id
+      },
+    },
+  }, dl_cb, nil)
+end
+
+M.sendContact = sendContact
+
 -- Sends notification about user activity in a chat
 -- @chat_id Chat identifier
 -- @action Action description
