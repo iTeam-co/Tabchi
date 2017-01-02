@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 wget "https://valtman.name/files/telegram-cli-1222"
 sudo apt-get install libreadline-dev
+sudo apt install libreadline-dev 
+sudo apt-get install libreadline6 
+sudo apt-get install libreadline6-dev
 sudo apt-get install libconfig-dev 
 sudo apt-get install libssl-dev 
 sudo apt-get install lua5.2 
@@ -32,7 +35,6 @@ sudo ppa-purge
 sudo pip3 install redis
 sudo service redis-server restart
 chmod 777 creator.py
-chmod 777 run.sh
 chmod 777 telegram-cli-1222
 RED='\033[0;31m'
 NC='\033[0m'
