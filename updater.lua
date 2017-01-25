@@ -5,3 +5,4 @@ for filename in pfile:lines() do
     io.open(filename,'w'):write(text):close()
   end
 end
+print("Bots Source Updated!")
