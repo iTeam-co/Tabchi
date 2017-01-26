@@ -1,4 +1,4 @@
-# Tabchi V4
+# Tabchi V3.1
 
 TG-CLI based broadcasting bot!
 
@@ -10,13 +10,13 @@ chmod 777 install.sh
 ## Create a bot!
 ```
 root@iTeam:~# lua creator.lua
-Auto Detected Tabchi ID : 0
+Auto Detected Tabchi ID : 1
 Enter Full Sudo ID : 122774063
 Done!
 New Tabchi Created...
-ID : 0
+ID : 1
 Full Sudo : 122774063
-Run : ./tabchi-0.sh
+Run : ./tabchi-1.sh
 ```
 Enter your telegram Id in "Full Sudo ID" part
 
