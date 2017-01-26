@@ -1,7 +1,7 @@
 while true ; do
-  killall tmux
   for entr in tabchi-*.sh ; do
     entry="${entr/.sh/}"
+    tmux kill-session -t $entry
     rm -rf ~/.telegram-cli/$entry/data/animation/*
     rm -rf ~/.telegram-cli/$entry/data/audio/*
     rm -rf ~/.telegram-cli/$entry/data/document/*
