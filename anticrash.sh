@@ -1,3 +1,4 @@
+#!/bin/bash
 while true ; do
   for entr in tabchi-*.sh ; do
     entry="${entr/.sh/}"
@@ -14,6 +15,6 @@ while true ; do
     tmux new-session -d -s $entry "./$entr"
     tmux detach -s $entry
   done
-  print "Bots Running!"
+  echo Bots Running!
   sleep 1800
 done
