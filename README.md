@@ -30,7 +30,7 @@ Send `/start` to [@TabChiRobot](https://telegram.me/TabChiRobot) in telegram
 
  * [BugFather (Amir_h)](https://telegram.me/BugFather)
  * [Base64 (Amin)](https://telegram.me/Base64)
- * [Jan123 (Javad)](https://telegram.me/XxX_Developer_XxX)
+ * [Jan123 (Javad)](https://telegram.me/jan123)
  * [Shayan123Hacker (Shayan)](https://telegram.me/Shayan123Hacker)
 
 ### Powered by [iTeam](https://telegram.me/iTeam_IR)
